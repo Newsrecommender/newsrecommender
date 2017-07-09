@@ -1,0 +1,7 @@
+0 0 * * * /home/enigma/Code/newspost/crawlers/crawlers/scripts/scrape_list_1.sh >> /home/enigma/Code/newspost/crawlers/crawlers/scripts/crontab1.log
+0 4 * * * /home/enigma/Code/newspost/crawlers/crawlers/scripts/scrape_list_2.sh >> /home/enigma/Code/newspost/crawlers/crawlers/scripts/crontab2.log
+0 8 * * * /home/enigma/Code/newspost/crawlers/crawlers/scripts/scrape_list_3.sh >> /home/enigma/Code/newspost/crawlers/crawlers/scripts/crontab3.log
+0 12 * * * /home/enigma/Code/newspost/crawlers/crawlers/scripts/scrape_list_4.sh >> /home/enigma/Code/newspost/crawlers/crawlers/scripts/crontab4.log
+0 16 * * * /home/enigma/Code/newspost/crawlers/crawlers/scripts/scrape_list_5.sh >> /home/enigma/Code/newspost/crawlers/crawlers/scripts/crontab5.log
+0 20 * * * /home/enigma/Code/newspost/crawlers/crawlers/scripts/scrape_list_6.sh >> /home/enigma/Code/newspost/crawlers/crawlers/scripts/crontab6.log
+#*/30 * * * * sync && echo 3 | /proc/sys/vm/drop_caches
