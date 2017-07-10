@@ -1,6 +1,6 @@
 project_test_conf:
     ratings_file_path: 'D:\\Projects\\newsrecommender\\ArticleRecommendationProject\\Data'
-    ratings_file_name: 'User_Ratings_Compile_10.csv'
+    ratings_file_name: 'User_Ratings_Compile.csv'
     articles_file_path: 'D:\\Projects\\newsrecommender\\ArticleRecommendationProject\\Data'
     articles_file_name: 'title_and_article_db.csv'
     ratings_index_column: 'Article'
