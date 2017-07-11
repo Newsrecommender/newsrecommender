@@ -159,7 +159,7 @@ user_recommended_articles = {}
 for user in news_users:
     user_recommended_articles[user] = user_recommendations(user)[0:5]
 #     user_recommended_articles[user] = articles_db.Title[user_recommendations(user)[0:5]]
-# print (user_recommended_articles)
+print (user_recommended_articles)
 
 
 # # Generating recommendation for users
@@ -175,3 +175,26 @@ df_user = pd.DataFrame()
 df_user = pd.DataFrame.from_dict(user_recommended_articles)
 df_user = df_user.dropna(axis=0, how='any', thresh=None, subset=None, inplace=False)
 print df_user
+newsreaders = list(df_user)
+
+# user_recommendations_articles = {}
+# for user in newsreaders:
+#     recommended_articles_titles = []
+#     temp_rec = list(df_user[user])
+#     for content in temp_rec:
+#         user_recommendations_articles[user] = articles_db.Title[content]
+#
+# print (user_recommendations_articles)
+
+# Generating recommendation for users
+news_users = list(user_ratings)
+user_recommended_articles = {}
+for user in news_users:
+    # user_recommended_articles[user] = user_recommendations(user)[0:5]
+    user_recommended_articles[user] = articles_db.Title[user_recommendations(user)[0:5]]
+print type(user_recommended_articles)
+print (user_recommended_articles)
+
+df_user_reco = pd.DataFrame.from_dict(user_recommended_articles)
+print df_user_reco
+df_user_reco.to_csv(output_user_file_name)
