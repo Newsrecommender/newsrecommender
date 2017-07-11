@@ -19,9 +19,8 @@ server\_addr : ES server address - Will be localhost once elastic search is inst
 
 All feeds are collected as RSS/XMLS&#39;s.
 
-**b**. **Web crawler News.py –** This file contains article information from a specific news site, Business standard in our example. Every news site has a different site structure. Thus every site will have its own scraper which needs to be written.
+**b**. **Web crawler News.py –** This file contains article information from a specific news site, Business standard in our example.     Every news site has a different site structure. Thus every site will have its own scraper which needs to be written.
 
-**       **
 
 **2**. **Crawlers** – Once we did the above test and wrote our own set of code. We were able to understand the scrapers that were written by the company. This folder has some sample code of how the scraper was actually written.
 
@@ -30,8 +29,6 @@ Also This folder has many subfolders explained below:
 **a**. **Scripts** : It contains scripts which are called from a cronjob, which accumulates the data output(json) of all scrapers(in folder -&gt; spiders).
 **b**. **Spiders** : It has all individual news site scraper.
 **c**. **Et.json** : Example of how the json looks like.
-
-
 
 **3**. **Exploratory analysis** – This folder has an excel file, which contains summary level charts, which gives EDA.
 
