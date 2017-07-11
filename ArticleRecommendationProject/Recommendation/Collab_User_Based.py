@@ -157,11 +157,20 @@ print(user_articles_recommendations[0:5])
 news_users = list(user_ratings)
 user_recommended_articles = {}
 for user in news_users:
-    # user_recommended_articles[user] = user_recommendations(user)[0:5]
-    user_recommended_articles[user] = articles_db.Title[user_recommendations(user)[0:5]]
+    user_recommended_articles[user] = user_recommendations(user)[0:5]
+#     user_recommended_articles[user] = articles_db.Title[user_recommendations(user)[0:5]]
+# print (user_recommended_articles)
 
-print type(user_recommended_articles)
 
+# # Generating recommendation for users
+# news_users = list(user_ratings)
+# user_recommended_articles = {}
+# for user in news_users:
+#     # user_recommended_articles[user] = user_recommendations(user)[0:5]
+#     user_recommended_articles[user] = articles_db.Title[user_recommendations(user)[0:5]]
+#
+# print (user_recommended_articles)
+#
 df_user = pd.DataFrame()
 df_user = pd.DataFrame.from_dict(user_recommended_articles)
 df_user = df_user.dropna(axis=0, how='any', thresh=None, subset=None, inplace=False)
