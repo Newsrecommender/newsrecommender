@@ -5,4 +5,5 @@ project_test_conf:
     articles_file_name: 'title_and_article_db.csv'
     ratings_index_column: 'Article'
     output_path: 'D:\Projects\newsrecommender\ArticleRecommendationProject\OutputFolder_Recommendations'
-    output_file_name: 'Collaberative_filtering_output.csv'
+    output_file_name: 'Collaberative_Content_filtering_output.csv'
+    output_user_file_name: 'Collaberative_User_filtering_output.csv'

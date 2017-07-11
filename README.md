@@ -46,12 +46,13 @@ Also This folder has many subfolders explained below:
 
 **5**. **Recommendation –** This folder contains code for Content based and Collab based recommendation techniques.
 
-**a**. **CollabTest.py:** Code written for Collaborative recommendation technique. This takes **User\_Ratings\_**** Compile.xlsx** as an input and gives out files for each of the users for 1000 articles.
-**b**. **ContentTest.py:**  Code written for Content based recommendation technique. This takes **Title\_and\_article1000.csv**  as an input and gives out an output file, which has each article and 10 articles which are similar to it.
+**a**. **Collab_Content_Based.py:** Code written for Collaborative recommendation technique. This takes **User\_Ratings\_**** Compile.csv** as an input and gives generates recommendations by finding similiar articles for each of the 1000 articles.
+**b**. **Collab_User_Based.py:** Code written for Collaborative recommendation technique. This takes **User\_Ratings\_**** Compile.csv** as an input and generates articles recommendations by finding similiar users preferences.
+**c**. **ContentTest.py:**  Code written for Content based recommendation technique. This takes **Title\_and\_article1000.csv**  as an input and gives out an output file, which has each article and 10 articles which are similar to it.
 
 **6**. **OutputFolder\_Recommendations –** This contains all o/p data that we have got from the various recommendation code, present in Recommendation folder.
 
 **a. ContentOutput:** This file is what we have got by running ContentTest.py code.
 **b. CollabOutput:** This file is what we have got by running CollabTest.py code.
 
-**7**. **Recommender\_Project\_Presentation v1-090717.pptx –** This is the ppt that has been created explaining the project.
+**7**. **Recommender\_Project\_Presentation.pptx –** This is the ppt that has been created explaining the project.
