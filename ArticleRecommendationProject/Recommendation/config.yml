@@ -1,9 +1,9 @@
 project_test_conf:
-    ratings_file_path: 'D:\\Projects\\newsrecommender\\ArticleRecommendationProject\\Data'
+    ratings_file_path: 'C:\\Users\\vikas\\Documents\\Projects\\EPBA_Project\\NewsRecommender\\Final_gitrepo\\newsrecommender\\ArticleRecommendationProject\\Data'
     ratings_file_name: 'User_Ratings_Compile.csv'
-    articles_file_path: 'D:\\Projects\\newsrecommender\\ArticleRecommendationProject\\Data'
+    articles_file_path: 'C:\\Users\\vikas\\Documents\\Projects\\EPBA_Project\\NewsRecommender\\Final_gitrepo\\newsrecommender\\ArticleRecommendationProject\\Data'
     articles_file_name: 'title_and_article_db.csv'
     ratings_index_column: 'Article'
-    output_path: 'D:\Projects\newsrecommender\ArticleRecommendationProject\OutputFolder_Recommendations'
+    output_path: 'C:\\Users\\vikas\\Documents\\Projects\\EPBA_Project\\NewsRecommender\\Final_gitrepo\\newsrecommender\\ArticleRecommendationProject\OutputFolder_Recommendations'
     output_file_name: 'Collaberative_Content_filtering_output.csv'
     output_user_file_name: 'Collaberative_User_filtering_output.csv'
