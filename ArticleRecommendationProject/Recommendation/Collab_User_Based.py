@@ -10,7 +10,7 @@ import networkx as nx
 
 def get_script_directory():
     """
-    This function returns the directory of the script in scrip mode
+    This function returns the directory of the script in script mode
     In interactive mode returns interpreter name.
     """
     path = os.path.realpath(sys.argv[0])
