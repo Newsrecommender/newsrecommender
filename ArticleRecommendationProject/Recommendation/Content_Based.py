@@ -48,6 +48,7 @@ class AnalyzeArticles:
          article.
         :return:
         """
+        self.load_config()
         self.load_articles()
         self.vectorize_articles()
         self.reduce_dimensionality_articles()
@@ -56,6 +57,18 @@ class AnalyzeArticles:
         self.save_output_to_csv()
 
     # Load data
+    def load_config(self):
+        # import config files
+        #print("Reading configuration")
+        logging.debug("Reading configuration")   
+        with open("ContentConfig.yml", 'r') as ymlfile:
+            cfg = yaml.load(ymlfile)
+        self.ip_file_path = cfg['project_test_conf']['ip_file_path']
+        self.ip_file_name = cfg['project_test_conf']['ip_file_name']
+        self.op_file_path = cfg['project_test_conf']['op_file_path']
+        self.op_file_name = cfg['project_test_conf']['op_file_name']
+        
+
     def load_articles(self):
         """
         Loads the DataFrame with all the  articles. 
@@ -69,9 +82,9 @@ class AnalyzeArticles:
         #logging.debug("Directory Name : {0} and File name is {1} \n".format(file_path,file_name))
         
         #logging.debug("Directory Name : {0} and File name is {1} \n".format(parser.get('Article_input_dir', 'ip_file_path'),parser.get('Article_input_file', 'ip_file_name'))    
-        file_path = '/Users/shwetanknagar/Downloads/Personal/Project Eventstreet/Boconni Project'
-        file_name = os.path.basename("TestSet300_User_Ratings.xlsx")
-        path = os.path.join(file_path, file_name)
+        #file_path = '/Users/shwetanknagar/Downloads/Personal/Project Eventstreet/Boconni Project'
+        #file_name = os.path.basename("TestSet300_User_Ratings.xlsx")
+        path = os.path.join(self.ip_file_path, self.ip_file_name)
         #commented by shwenag
         #self.df = pd.read_csv('TrainSet700_User_Ratings.xlsx', encoding='utf-8')         # Load articles in a DataFrame
         self.df = pd.read_excel(path,  na_values=['NA'], parse_cols = "A,B,C")
@@ -324,6 +337,8 @@ class AnalyzeArticles:
         denominator = square_rooted(x) * square_rooted(y)
         return round(numerator/float(denominator), 3)
 
+        
+
     @staticmethod
     def euclidean_distance(x, y):
         return np.linalg.norm(x-y)     
@@ -340,9 +355,9 @@ class AnalyzeArticles:
     
     def save_output_to_csv(self):
 
-        file_path = '/Users/shwetanknagar/Downloads/Personal/Project Eventstreet/Boconni Project'
-        file_name = os.path.basename("ContentOutput.csv")
-        path = os.path.join(file_path, file_name)
+        #op_file_path = '/Users/shwetanknagar/Downloads/Personal/Project Eventstreet/Boconni Project'
+        #op_file_name = os.path.basename("ContentOutput.csv")
+        path = os.path.join(self.op_file_path, self.op_file_name)
         print(path)
         #file_name = 'output.csv'
         try:
