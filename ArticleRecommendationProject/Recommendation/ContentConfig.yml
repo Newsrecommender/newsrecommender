@@ -1,5 +1,5 @@
 project_test_conf:
-    ip_file_path: '/Users/shwetanknagar/Documents/GitHub/newsrecommender/ArticleRecommendationProject/Data'
-    ip_file_name: 'TestSet300_User_Ratings.xlsx'
-    op_file_path: '/Users/shwetanknagar/Documents/GitHub/newsrecommender/ArticleRecommendationProject/OutputFolder_Recommendations'
-    op_file_name: 'ContentOutput.csv'
+  ip_file_path: '/Users/shwetanknagar/Documents/GitHub/newsrecommender/ArticleRecommendationProject/Data'
+  ip_file_name: 'TrainSet700_User_Ratings.xlsx'
+  op_file_path: '/Users/shwetanknagar/Documents/GitHub/newsrecommender/ArticleRecommendationProject/OutputFolder_Recommendations'
+  op_file_name: 'ContentOutput_700.csv'
