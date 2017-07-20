@@ -1,6 +1,6 @@
 project_test_conf:
     ratings_file_path: 'C:\\Users\\vikas\\Documents\\Projects\\EPBA_Project\\NewsRecommender\\Final_gitrepo\\newsrecommender\\ArticleRecommendationProject\\Data'
-    ratings_file_name: 'User_Ratings_Compile.csv'
+    ratings_file_name: 'User_Ratings_Compile_titles.csv'
     articles_file_path: 'C:\\Users\\vikas\\Documents\\Projects\\EPBA_Project\\NewsRecommender\\Final_gitrepo\\newsrecommender\\ArticleRecommendationProject\\Data'
     articles_file_name: 'title_and_article_db.csv'
     ratings_index_column: 'Article'
